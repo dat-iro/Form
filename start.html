@@ -15,5 +15,49 @@
     </style>
   </head>
 
-  <body></body>
+  <body>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required>
+
+      <label for="first_name">Name</label>
+      <input type="first_name" name="first_name" id="first_name" required>
+      <label for="last_name">Last Name</label>
+      <input type="last_name" name="last_name" id="last_name" required>
+
+      <label for="date_of_birth">Date of Birth</label>
+      <input type="date" name="date_of_birth" id="date_of_birth" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" required>
+
+      <label for="plan">Choose a Plan</label>
+      <select name="plan" id="plan" required>
+          <option value="free_plan">Free Plan</option>
+          <option value="bronze_plan">Bronze: 10€</option>
+          <option value="silver_plan">Silver: 30€</option>
+          <option value="gold_plan">Gold: 50€</option>
+      </select>
+
+      <label for="pro_plan">Pro Plan</label>
+      <input type="checkbox" name="pro_plan" id="pro_plan" required>
+
+      <label for="credit_card">Credit Card Number</label>
+      <input type="text" name="credit_card" id="credit_card" required pattern="[0-9]+">
+
+      <label for="cvc">CVC</label>
+      <input type="text" name="cvc" id="cvc" required pattern="[0-9]+" minlength="3" maxlength="4">
+
+      <label for="expiration_date">Expiration Date</label>
+      <input type="date" name="expiration_date" id="expiration_date" required>
+
+      <label for="billing_address">Billing Address</label>
+      <textarea name="billing_address" id="billing_address" required></textarea><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
 </html>
